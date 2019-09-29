@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ryszard-glegola-learning/learning-git-2#readme",
   "description": "",
   "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.7"
   }
 }
