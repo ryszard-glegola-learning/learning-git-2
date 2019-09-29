@@ -1,3 +1,23 @@
-autoprefixer-cli ma czytać z pliku style.css i zapisywać wynik do pliku style.prefixed.css (sprawdziłem, działa):
+1. autoprefixer-cli ma czytać z pliku style.css i zapisywać wynik do pliku style.prefixed.css (sprawdziłem, działa):
 
-autoprefixer-cli -o css/style.prefixed.css css/style.css
+		autoprefixer-cli -o css/style.prefixed.css css/style.css
+
+Właściwie w dokumentacji autoprefixer-cli napisano, że do tego celu powinno się używać postcss-cli, ale skoro w zadaniu kazano dodać autoprefixer-cli, tak zrobiłem.
+
+2. nu-html-checker ma wyświetlać listę błędów we wszystkich plikach .html.
+
+		nu-html-checker *.html
+		
+I działa, choć z początku chciałem sprawdzić składnię i wywołałem 
+
+nu-html-checker -h 
+
+co wyświetliło informację, aby wywoływać ten skrypt przez:
+
+cli [options] <files/urls ...>
+
+ale niestety, po wpisaniu cli pojawiał się komunikat command not found - więc zainstalowałem pakiet o nazwie cli - lecz nadal nie dawał się wywoływać. Na szczęście okazało się, że nu-html-checker *.html jednak działa, jak trzeba.
+
+		
+
+
